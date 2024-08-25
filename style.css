@@ -50,6 +50,29 @@ header .logo h1 {
     color: #ff6347;
 }
 
+/* About Section with Portfolio Picture */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image {
+    flex: 0.5;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Hero Section */
 .hero {
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
@@ -58,11 +81,24 @@ header .logo h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to dim the background image */
 }
 
 .hero-content {
     max-width: 800px;
     color: #ffffff;
+    position: relative;
+    z-index: 1; /* Ensures content appears above the overlay */
 }
 
 .hero h1 {
@@ -70,11 +106,13 @@ header .logo h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 .cta-button {
