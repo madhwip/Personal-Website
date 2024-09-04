@@ -212,6 +212,8 @@ p {
     list-style-type: disc;
     margin-left: 20px;
 }
+
+/* Books Published Section */
 #books-published {
     margin: 50px 0;
 }
@@ -222,28 +224,43 @@ p {
     margin-bottom: 20px;
 }
 
-#books-published .book {
+.book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-#books-published .book h3 {
-    font-size: 1.5em;
+.book-details {
+    flex: 1;
+    padding-right: 20px; /* Space between text and button */
 }
 
-#books-published .cta-button {
+.purchase-link {
+    flex-shrink: 0; /* Keeps button from shrinking */
+}
+
+.purchase-button {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
+    padding: 12px 25px;
+    background-color: #28a745; /* Green button */
     color: white;
+    text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from breaking */
 }
 
-#books-published .cta-button:hover {
-    background-color: #0056b3;
+.purchase-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.purchase-button:active {
+    background-color: #1e7e34; /* Even darker on active */
 }
 /* Investors Section */
 .investors {
