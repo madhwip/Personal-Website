@@ -212,7 +212,39 @@ p {
     list-style-type: disc;
     margin-left: 20px;
 }
+#books-published {
+    margin: 50px 0;
+}
 
+#books-published h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#books-published .book {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#books-published .book h3 {
+    font-size: 1.5em;
+}
+
+#books-published .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#books-published .cta-button:hover {
+    background-color: #0056b3;
+}
 /* Investors Section */
 .investors {
     background-color: #eaf4ff;
